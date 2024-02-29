@@ -1,8 +1,9 @@
-
 document.addEventListener('DOMContentLoaded', function() {
     const startBtn = document.getElementById('start-btn');
     const orderResult = document.getElementById('order-result');
   
+    // Establecer el idioma de reconocimiento de voz
+
     if ('webkitSpeechRecognition' in window) {
       const recognition = new webkitSpeechRecognition();
       recognition.continuous = false;
